@@ -1,0 +1,20 @@
+q 2) Big O notation ,explain
+answer: 
+Big O notation is a way to describe how the runtime or space requirements of an algorithm grow as the size of the input increases. It focuses on the worst-case scenario, giving you a way to evaluate an algorithm's efficiency without getting caught up in specifics.
+ Key Points:
+1. Purpose: Big O notation helps you understand how an algorithm will perform as the input size (often denoted as n) becomes very large. It allows you to compare the efficiency of different algorithms.
+2. Focus on Growth Rate: Big O looks at the dominant term in the performance as n grows, ignoring constant factors and lower-order terms. This means we care about the most significant part of the equation as the input size gets large.
+3. Common Big O Notations:
+   - O(1): Constant time. The algorithm's runtime does not change regardless of the input size. (e.g., accessing an element in an array).
+   - O(log n): Logarithmic time. The runtime grows logarithmically as the input size increases. (e.g., binary search).
+   - O(n): Linear time. The runtime grows linearly with the input size. (e.g., searching through an unsorted list).
+   - O(n log n): Linearithmic time. Common for efficient sorting algorithms (e.g., mergesort, heapsort).
+   - O(n²): Quadratic time. The runtime grows quadratically as the input size increases. (e.g., bubble sort).
+   - O(2^n): Exponential time. The runtime doubles with each additional input. (e.g., some recursive algorithms).
+   - O(n!): Factorial time. Very slow growth, often seen in algorithms that generate all permutations of a set.
+ Example:
+Let’s take a simple example of searching through a list:
+- Linear Search (O(n)): If you have a list of n items and want to find a specific one by checking each item, you might need to look at every single item in the worst case, leading to O(n).
+- Binary Search (O(log n)): If the list is sorted, you can look at the middle item, and depending on whether your item is larger or smaller, you can ignore half of the list. This way, the number of checks grows much slower compared to linear search, leading to O(log n).
+ Summary:
+Big O notation provides a way to talk about algorithm efficiency in a general sense, allowing you to understand and compare how well algorithms scale as the input size increases. It’s a crucial concept in computer science and helps you make informed choices about which algorithms to use for specific problems.
