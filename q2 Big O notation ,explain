@@ -5,13 +5,13 @@ Big O notation is a way to describe how the runtime or space requirements of an 
 1. Purpose: Big O notation helps you understand how an algorithm will perform as the input size (often denoted as n) becomes very large. It allows you to compare the efficiency of different algorithms.
 2. Focus on Growth Rate: Big O looks at the dominant term in the performance as n grows, ignoring constant factors and lower-order terms. This means we care about the most significant part of the equation as the input size gets large.
 3. Common Big O Notations:
-   - O(1): Constant time. The algorithm's runtime does not change regardless of the input size. (e.g., accessing an element in an array).
-   - O(log n): Logarithmic time. The runtime grows logarithmically as the input size increases. (e.g., binary search).
-   - O(n): Linear time. The runtime grows linearly with the input size. (e.g., searching through an unsorted list).
+   - O(1)      : Constant time. The algorithm's runtime does not change regardless of the input size. (e.g., accessing an element in an array).
+   - O(log n)  : Logarithmic time. The runtime grows logarithmically as the input size increases. (e.g., binary search).
+   - O(n)      : Linear time. The runtime grows linearly with the input size. (e.g., searching through an unsorted list).
    - O(n log n): Linearithmic time. Common for efficient sorting algorithms (e.g., mergesort, heapsort).
-   - O(n²): Quadratic time. The runtime grows quadratically as the input size increases. (e.g., bubble sort).
-   - O(2^n): Exponential time. The runtime doubles with each additional input. (e.g., some recursive algorithms).
-   - O(n!): Factorial time. Very slow growth, often seen in algorithms that generate all permutations of a set.
+   - O(n² )    : Quadratic time. The runtime grows quadratically as the input size increases. (e.g., bubble sort).
+   - O(2^n)    : Exponential time. The runtime doubles with each additional input. (e.g., some recursive algorithms).
+   - O(n!)     : Factorial time. Very slow growth, often seen in algorithms that generate all permutations of a set.
  Example:
 Let’s take a simple example of searching through a list:
 - Linear Search (O(n)): If you have a list of n items and want to find a specific one by checking each item, you might need to look at every single item in the worst case, leading to O(n).
