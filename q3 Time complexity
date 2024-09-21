@@ -1,0 +1,58 @@
+q 3) what is time complexity, explain with example.
+ans : 
+Time complexity is a way to measure how the runtime of an algorithm changes with the size of the input. It helps us understand how efficiently an algorithm runs, especially as the input size grows larger.
+
+ Key Points:
+
+1. Input Size: Usually denoted as n, which represents how many elements or items the algorithm needs to process.
+
+2. Growth Rate: Time complexity describes how the execution time of an algorithm increases as n increases. It’s usually expressed using Big O notation.
+
+3. Best, Worst, and Average Cases: 
+   - Best case: The minimum time required for an input.
+   - Worst case: The maximum time required for an input.
+   - Average case: The expected time required for a random input.
+
+ Example: Finding an Item in a List
+
+Let’s look at two different search algorithms to understand time complexity:
+
+# 1. Linear Search
+
+- Description: You look through each item in a list one by one until you find the item you're looking for.
+  
+- Time Complexity:
+  - Worst Case: If the item is the last one or not in the list at all, you’ll check every item, leading to O(n).
+  - Best Case: If the item is the first one, it takes O(1) (constant time).
+  - Average Case: You might check about half the items on average, so it’s still considered Θ(n).
+
+Visualization:
+```
+List: [3, 5, 2, 7, 9] (n = 5)
+Search for 7:
+1. Check 3
+2. Check 5
+3. Check 2
+4. Check 7 (found)
+```
+
+# 2. Binary Search
+
+- Description: This method only works on sorted lists. You look at the middle item; if it’s too high or too low, you ignore half of the list and keep searching in the relevant half.
+
+- Time Complexity:
+  - Worst Case: You keep halving the list until you find the item or determine it’s not there, leading to O(log n).
+  - Best Case: If the item is in the middle, it takes O(1).
+  - Average Case: On average, it also takes about O(log n).
+
+Visualization:
+```
+Sorted List: [2, 3, 5, 7, 9] (n = 5)
+Search for 7:
+1. Check middle (5) -> too low, ignore left half
+2. Check middle of right half (7) -> found!
+```
+
+ Summary
+
+Time complexity is a crucial concept in computer science that helps us evaluate the efficiency of algorithms. By understanding how different algorithms perform as the size of the input increases, you can choose the best approach for your specific problem. For example, binary search is generally faster than linear search for large datasets, assuming the data is sorted.
